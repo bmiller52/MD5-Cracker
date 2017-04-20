@@ -8,7 +8,7 @@ pwfile = raw_input("\nPlease Enter the File Name: ")
 try:
     pwfile = open(pwfile, "r")
 except:
-    print("\nERROR: Could not Find File\n")
+    print("\nERROR: Could not Find File")
     quit()
 
 for password in pwfile:
