@@ -2,13 +2,13 @@ import md5
 
 counter = 1
 
-pass_in = raw_input("Please Enter the MD5 Hash: ")
-pwfile = raw_input("Please Enter the File Name: ")
+pass_in = raw_input("\nPlease Enter the MD5 Hash: ")
+pwfile = raw_input("\nPlease Enter the File Name: ")
 
 try:
     pwfile = open(pwfile, "r")
 except:
-    print("\nCould not Find File")
+    print("\nERROR: Could not Find File\n")
     quit()
 
 for password in pwfile:
